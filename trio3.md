@@ -6,7 +6,7 @@ This website helps you to keep tracking of your projects and tasks.
 1. Quebrar o projeto em tarefas. Fazer um commit disso e mandar um pull request para cá.
 2. Começar a fazer a lista de tarefas que vocês documentaram.
 
-**Trio (20/04 - ):
+**Trio (20/04 - ):**
 
 * [Diego Ceccon](https://github.com/Jurfest), [Lucas Victor](https://github.com/programming-man) e [Matheus](https://github.com/OdMatheuS)
 
