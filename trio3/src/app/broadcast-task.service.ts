@@ -4,11 +4,11 @@ import { Injectable, EventEmitter } from '@angular/core';
   providedIn: 'root'
 })
 export class BroadcastTaskService {
-  private broadcastNewTodo = new EventEmitter<string>();
+  broadcastNewTodo = new EventEmitter<string>();
 
   constructor() { }
 
-  sendNewTodo(todo:string){
+  sendNewTodo(todo: string) {
     this.broadcastNewTodo.emit(todo);
   }
 }

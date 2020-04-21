@@ -1,6 +1,6 @@
 <div id="container">
     <ul>
-        <li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
+        <li><span *ngFor="let todo of todoList ">{{todo}}<span><i class="fa fa-trash"></i></span> <span> </span></span>
         <li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
         <li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
     </ul>

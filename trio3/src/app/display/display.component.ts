@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BroadcastTaskService } from '../broadcast-task.service'
+
 
 @Component({
   selector: 'app-display',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _link: BroadcastTaskService) { }
+  todoList: string[] = []
 
   ngOnInit(): void {
+    this._link.broadcastNewTodo.subscribe((result) => {
+      this.todoList.push(result)
+      console.log(result)
+    })
+
   }
 
 }
