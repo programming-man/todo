@@ -24,8 +24,8 @@ export class DisplayComponent implements OnInit {
     })
   }
 
-  deletar(){
-    console.log();
+  deletar(event){
+    console.log(`evento do deletar passa:`);
     
   }
 
