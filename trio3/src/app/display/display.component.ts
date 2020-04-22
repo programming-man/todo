@@ -25,8 +25,9 @@ export class DisplayComponent implements OnInit {
   }
 
   deletar(event){
-    console.log(`evento do deletar passa:`);
-    
+    console.log(event.target.id )
+    let index = this.todoList.indexOf(event.target.id);
+    this.todoList.splice(index,1);
   }
 
 

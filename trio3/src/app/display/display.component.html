@@ -1,7 +1,7 @@
 <div id="container">
     <ul *ngFor="let todo of todoList">
         <li>
-            <span class="deleteIcon" (clik)="deletar($event)"><i></i></span><i></i>
+            <span class="deleteIcon" (click)="deletar($event)" id="{{todo}}"><i></i></span><i></i>
             <span class="description-todo">{{todo}}</span>
         </li> 
     </ul>
