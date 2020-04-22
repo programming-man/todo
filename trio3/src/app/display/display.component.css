@@ -2,33 +2,30 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	background: #fff;
+	color: #666;
+}
+ul:nth-child(2n) {
+	background: #f7f7f7;
 }
 
 li {
-	background: #fff;
 	height: 40px;
-	line-height: 40px;
-	color: #666;
 }
 
-li:nth-child(2n) {
-	background: #f7f7f7;
-}
 
-/*Yuxaridaki kimi eyni effekti verir*/
-/*li:nth-of-type(2n) {
-	background: #f7f7f7;
-}*/
-
-span {
+.deleteIcon {
 	background: #e74c3c;
 	height: 40px;
 	width: 0;
-	margin-right: 20px;
-	text-align: center;
+	margin-right: 3%;
 	display: inline-block;
 	color: blue; /** Alteração da cor apenas para verificar entrada de valores */
 	transition: 0.2s linear;
+}
+.description-todo {
+	height: 40px;
+	text-align: center;
 }
  /* opacity: 0;  */
 
@@ -39,7 +36,7 @@ li:hover span {
 
 #container {
 	width: 360px;
-	margin: 100px auto;
+	margin: 0 auto 0 auto;
 	background: #f7f7f7;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }

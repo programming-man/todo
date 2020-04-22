@@ -12,8 +12,11 @@ export class AddTaskComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  task:string = ''
+
   onInput(todo:string) {
     this._link.sendNewTodo(todo);
+    this.task = ''
   }
 
 }

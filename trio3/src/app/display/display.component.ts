@@ -10,14 +10,24 @@ import { BroadcastTaskService } from '../broadcast-task.service'
 export class DisplayComponent implements OnInit {
 
   constructor(private _link: BroadcastTaskService) { }
+  
   todoList: string[] = []
 
   ngOnInit(): void {
+    this.adicionar()
+  }
+
+  adicionar(){
     this._link.broadcastNewTodo.subscribe((result) => {
       this.todoList.push(result)
       console.log(result)
     })
-
   }
+
+  deletar(){
+    console.log();
+    
+  }
+
 
 }
